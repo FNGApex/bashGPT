@@ -1,1 +1,2 @@
-Token = ""
+_Token = str(open("./GPTToken","r").readline())
+print(_Token)
