@@ -7,7 +7,7 @@ client = OpenAI(api_key=_Token)
 
 def chat_with_gpt(prompt):
     response = client.chat.completions.create(
-        model="gpt-4",
+        model="gpt-3.5-turbo",
         messages=[{"role": "user", "content": prompt}],
     )
     return json.loads(response.model_dump_json())["choices"][0]["message"]["content"]
